@@ -59,7 +59,7 @@ def plot_dictionary_data(x_values, y_values_min, y_values_cum, weeks, total_hour
     axs[1, 0].tick_params(axis='x', rotation=90, labelsize=6)
 
     # Plot the fourth graph (text box with total time)
-    axs[1, 1].text(0.5, 0.5, f"Streak for {streak} days\nTotal Time: {total_hours[-1]:.2f} hours\nToday's Time: {y_values_min[-1]:.2f} minutes",
+    axs[1, 1].text(0.5, 0.5, f"Streak for {streak} days\nTotal Time: {y_values_cum[-1]:.2f} hours\nToday's Time: {y_values_min[-1]:.2f} minutes",
                    horizontalalignment='center', verticalalignment='center', fontsize=18, transform=axs[1, 1].transAxes, color='white')
     timern = datetime.now().strftime('%H:%M:%S - %d/%m/%Y')
     axs[1, 1].text(1.0, 0.0, f"Updated {timern}", horizontalalignment='center', verticalalignment='center', fontsize=8, transform=axs[1, 1].transAxes, color='white')
