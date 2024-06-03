@@ -1,0 +1,2 @@
+Program that generates graph and shows data from https://github.com/ivoronin/TomatoBar/tree/main located in ~/Library/Containers/com.github.ivoronin.TomatoBar/Data/Library/Caches/TomatoBar.log
+![alt text](example.png)
